@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: advance-evamaria
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 bot.py
+    envVars:
+      - key: API_ID
+        value: "28853806"
+      - key: API_HASH
+        value: "fac54c9e5cb7f0c98dd6b08f7b89a0b0"
+      - key: BOT_TOKEN
+        value: ""
+      - key: DATABASE_URI
+        value: "mongodb+srv://1:1@cluster0.fshenly.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      - key: DATABASE_NAME
+        value: "Cluster0"
+      - key: LOG_CHANNEL
+        value: "-1002876156057"
+      # Optional
+      - key: PICS
+        value: "https://files.catbox.moe/eu6yg1.jpg"
+      - key: SELF_DELETE
+        value: "True"
+      - key: CUSTOM_FILE_CAPTION
+        value: "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [Update Channel](https://t.me/AITechWaveML)"
